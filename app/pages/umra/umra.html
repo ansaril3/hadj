@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Умра</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+
+  <ion-card (click)='openPreparation()'>
+     <ion-card-header>
+      Подготовка к поездке
+        </ion-card-header>
+</ion-card>
+
+
+
+<ion-card  (click)="openIhram()">
+  <ion-card-header>
+    Ихрам
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/ihram.jpg">
+    <div>Приближаясь к Мекке войдите в состояние ихрама<br> 
+<b>Читать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)='openTalbia()'>
+     <ion-card-header>
+      Тальбия
+     </ion-card-header>
+</ion-card>
+
+<ion-card  (click)="openEnterMasjid()">
+  <ion-card-header>
+    Вход в мечеть
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/haramEnter.jpg">
+    <div>Войдите в Заповедную мечеть с правой ноги <br>
+<b>Читать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openTawaf()">
+  <ion-card-header>
+    Таваф
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/tawaf.jpg">
+    <div>Начните семикратный обход Каабы <br>
+<b>Читать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openIbrahim()">
+  <ion-card-header>
+    Намаз 2 ракаата
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/ibrahim.jpg">
+    <div>Направьтесь к месту стояния Ибрахима <br>
+<b>Читать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openZamzam()">
+  <ion-card-header>
+    Зам-зам
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/zamzam.jpg">
+    <div>Выпейте воду и полейте её себе на голову <br>
+<b>Читать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openSai()">
+  <ion-card-header>
+    Са‘й
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/safa.jpg">
+    <div>Направьтесь к холму Сафа для совершения семикратного ритуального прохождения между холмами Сафа и Марва (са‘й) <br>
+<b>Читать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)='openExitMasjid()'>
+     <ion-card-header>
+      Мольба при выходе из мечети
+     </ion-card-header>
+</ion-card>
+
+<ion-card  (click)="openCut()">
+  <ion-card-header>
+    Бритьё головы
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/cut.jpeg">
+    <div>Мужчина равномерно укорачивает волосы на своей голове либо обривает её<br>
+<b>Читать дальше...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)='openHadj()'>
+     <ion-card-header>
+      Поздарвялем ваша Умра завершена!
+     </ion-card-header>
+      <ion-card-content>
+    <div>Дождитесь 8 зу-ль-хиджжа и начинайте Хадж!</div>
+  </ion-card-content>
+</ion-card>
+
+</ion-list>
+</ion-content>
+ 
+
+ 

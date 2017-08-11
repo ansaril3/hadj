@@ -1,2 +1,0 @@
-# hadj
-hadj app

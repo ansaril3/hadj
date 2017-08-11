@@ -1,0 +1,106 @@
+.dua {
+
+    scroll-content {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+  
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        background-position: center;
+    
+        padding-top: 0vh;
+        padding-bottom: 1vh;
+      //  flex-wrap:  wrap;
+        font-size: 3vh;
+
+    }
+    
+    .bismillah {
+       // flex: 40;
+        flex-shrink:0;
+        margin-top: 0vh !important;
+        background-image: url(../img/bismillah.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 80vw;
+    //    height: 70px;
+       // z-index: 3;
+       min-height: 70px;
+    }
+
+    .icon {
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        background-position: center;
+        width: 28px;
+    }
+
+    .arabic {
+     //   align-self: flex-end;
+        direction: rtl; 
+       // margin-top: 3vh;
+        margin-top: 10px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        font-size: 22px;
+        flex-shrink:0;
+    }
+
+        .adittion {
+        margin-top: 10px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        font-size: 2.5vh;
+        flex-shrink:0;
+    }
+
+    .arabic span {
+        margin-top: 20px;
+    }
+
+    .audio{
+        margin-left:5px;
+        flex-shrink:0;
+    }
+
+    button {
+        background: orange;
+   //     margin-left: 6vw;
+        align-self: center;
+        margin-bottom: 4vh;
+        height: 5vh;
+    }
+    .text span {
+        margin-top: 5px;
+    }
+
+    audio-track ion-thumbnail audio-track-play button {
+    //    width: 100% !important;
+    //    height:width !important; 
+    align-self: stretch;
+    }
+
+    .text {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        margin-top: 23px;
+        font-size: 2.5vh;
+        flex-shrink:0;
+    }
+    ion-item {
+        background-color:  transparent;
+    }
+
+   
+    .label {
+        margin-top: 20px;
+        height: 3vh;
+        position: left;
+        align-self: left;
+        flex-shrink:0;
+      //  z-index: 3;
+    }
+}

@@ -1,0 +1,15 @@
+.info {
+    scroll-content {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+     //   align-content: stretch !important;
+        align-items: center !important;
+        background-image: url(/build/img/bg.png) !important;
+        background-size: cover;
+        background-position: center;
+        padding-top: 0vh;
+        padding-bottom: 1vh;
+        flex-wrap:  wrap;
+    }
+}
