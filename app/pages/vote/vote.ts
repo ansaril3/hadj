@@ -32,19 +32,19 @@ export class VotePage {
     //   this.browser.open();
     this.platform.ready().then(() => {
       if (this.platform.is('android')) {
-        this.url = 'market://details?id=com.almathuratrus';
+        this.url = 'market://details?id=com.hadjhelperrus';
         try {
           this.browser = InAppBrowser.open(this.url, '_system', 'location=yes');
         } catch (err) {
-          this.url = 'https://play.google.com/store/apps/details?id=com.almathuratrus';
+          this.url = 'https://play.google.com/store/apps/details?id=com.hadjhelperrus';
           this.browser = InAppBrowser.open(this.url, '_system', 'location=yes');
         }
       } else {
-        this.url = 'itms-apps://itunes.apple.com/my/app/mathurat_rus/1179780695';
+        this.url = 'itms-apps://itunes.apple.com/my/app/com.hadjhelperrus/1271231562';
         try {
           this.browser = InAppBrowser.open(this.url, '_system', 'location=yes');
         } catch (err) { 
-          this.url = 'https://itunes.apple.com/my/app/mathurat_rus/1179780695';
+          this.url = 'https://itunes.apple.com/my/app/com.hadjhelperrus/1271231562';
           this.browser = InAppBrowser.open(this.url, '_system', 'location=yes');
         } 
       }

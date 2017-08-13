@@ -1,18 +1,100 @@
-<!--
-  Generated template for the PrepPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>prep</ion-title>
+    <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Подготовка к Умре и Хаджу</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
 
+
+<ion-list>
+
+  <ion-card>
+     <ion-card-header>
+      Намерение
+      </ion-card-header>
+      <ion-card-content>
+        Начните подготовку с намерения совершить Умру и Хадж ради Аллаха
+      </ion-card-content>
+</ion-card>
+
+
+
+<ion-card  (click)="openDocs()">
+  <ion-card-header>
+    Документы
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/docs.jpg">
+    <div>Приобретите путевку в через проверенного оператора<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+
+
+<ion-card  (click)="openClothes()">
+  <ion-card-header>
+    Одежда
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/clothes.jpg">
+    <div>Возьмите одежду и обувь для ихрама, а также повседневные вещи<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+
+
+<ion-card  (click)="openGigiena()">
+  <ion-card-header>
+    Средства гигиены
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/gigiena.jpg">
+    <div>Не забывайте о средствах гигены<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openFood()">
+  <ion-card-header>
+    Еда
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/food.jpg">
+    <div>Возьмите в дорогу немного еды и воды<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openAdd()">
+  <ion-card-header>
+    Дополнительно
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/books.jpg">
+    <div>Не забудьте также взять следующие вещи<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card  (click)="openSabr()">
+  <ion-card-header>
+    И самое главное...
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/sabr.jpg">
+    <div>Наберитесь моря богобоязненности и океана терпения<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+</ion-list>
 </ion-content>
+ 

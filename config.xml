@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.hadjhelperrus" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.hadjhelperrus" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Помощник по хаджу и умре</name>
   <description>Подготовка, советы, молитвы</description>
   <author email="ansaril3g@gmail.com" href="http://masjid.ru/">Ansar Z</author>

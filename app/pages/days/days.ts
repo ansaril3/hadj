@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { HadjPage } from '../../pages/hadj/hadj';
+import { UmraPage } from '../../pages/umra/umra';
 
 /*
   Generated class for the DaysPage page.
@@ -12,8 +14,21 @@ import { NavController } from 'ionic-angular';
 })
 export class DaysPage {
 
-  constructor(private navCtrl: NavController) {
-
+  constructor(private nav: NavController) {
+    this.nav = nav;
   }
+
+
+
+  openHadj() {
+    this.nav.push(HadjPage);
+  }
+
+
+  openUmra() {
+    this.nav.push(UmraPage);
+  }
+
+
 
 }

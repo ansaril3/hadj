@@ -1,18 +1,253 @@
-<!--
-  Generated template for the HadjPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>hadj</ion-title>
+    <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Хадж</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
 
+<ion-list>
+
+  <ion-card (click)='openPreparation()'>
+     <ion-card-header>
+      Подготовка к поездке
+        </ion-card-header>
+</ion-card>
+
+  <ion-card (click)='open8()'>
+     <ion-card-header>
+    8-е зу-ль-хиджжа — день ат-тарвия
+     </ion-card-header>
+     <ion-card-content>
+     Сегодняшняя программа
+     </ion-card-content>
+  </ion-card>
+
+
+<ion-card  (click)="openIhram()">
+  <ion-card-header>
+    Ихрам
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/ihram.jpg">
+    <div>Войдите в состояние ихрама в месте проживания после рассвета (фаджр) и до полудня (зухр).<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card  (click)='openTalbia()'>
+     <ion-card-header>
+      Тальбия
+     </ion-card-header>
+</ion-card>
+
+
+<ion-card  (click)="openMina()">
+  <ion-card-header>
+    Перемещение в долину Мина
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/mina.jpg">
+    <div>Отправляйтесь в долину Мина и совершите в ней полуденный (зухр), предвечерний (‘аср), закатный (магриб) и ночной (‘иша’) намазы, сокращая их, но не совмещая. Переночуйте в долине Мина. 
+    </div>
+  </ion-card-content>
+</ion-card>
+
+
+  <ion-card (click)='open9()'>
+     <ion-card-header>
+    9-е зу-ль-хиджжа — день Арафа
+     </ion-card-header>
+     <ion-card-content>
+     Сегодняшняя программа
+     </ion-card-content>
+  </ion-card>
+
+<ion-card  (click)="openArafat()">
+  <ion-card-header>
+    Стояние на Арафате
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/arafat.jpg">
+    <div>Совершите рассветный намаз (фаджр) в долине Мина, а после восхода солнца отправляйтесь к долине Арафат. Постоянно произносите тальбию и такбир(слова «Аллаху акбар»).<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card (click)='open10()'>
+     <ion-card-header>
+    10-е зу-ль-хиджжа — День жертвоприношения
+     </ion-card-header>
+     <ion-card-content>
+     Сегодняшняя программа
+     </ion-card-content>
+  </ion-card>
+
+<ion-card  (click)="openMuzdalifa()">
+  <ion-card-header>
+    Муздалифа
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/muzdalifa.png">
+    <div>После захода солнца отправляйтесь из Арафата в Муздалифу.<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card  (click)="openJamarat()">
+  <ion-card-header>
+    Бросание камешков
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/djamarat.jpg">
+    <div>Идите к джамрат аль-акаба (большой столб)<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card >
+  <ion-card-header>
+    Жертвоприношение
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/baran.jpg">
+    <div>Если вы купили сертификат о принесении в жертву животного, то это дозволено. Если нет, то отправьтесь на скотобойню и совершите жертвоприношение.<br> 
+</div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card >
+  <ion-card-header>
+    Бритьё головы
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/cut.jpeg">
+    <div>После жертвоприношения мужчина сбривает волосы на своей голове (более желательно) или равномерно укорачивает волосы (менее желательно), а женщина состригает локон величиной с треть пальца.</div>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card  (click)="openEnterMasjid()">
+  <ion-card-header>
+    Вход в мечеть
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/haramEnter.jpg">
+    <div>Отправьтесь в Мекку для совершения основного обхода Каабы (таваф аль-ифада). Войдите в Заповедную мечеть с правой ноги. <br>
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openTawaf2()">
+  <ion-card-header>
+    Таваф Аль-Ифада (основной таваф)
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/tawaf.jpg">
+    <div>Начните семикратный обход Каабы. Облачаться в одеяние ихрам не нужно. Этот обход Каабы совершается обычным шагом от иначала до конца.<br>
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openIbrahim()">
+  <ion-card-header>
+    Намаз 2 ракаата
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/ibrahim.jpg">
+    <div>Направьтесь к месту стояния Ибрахима <br>
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openZamzam()">
+  <ion-card-header>
+    Зам-зам
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/zamzam.jpg">
+    <div>Выпейте воду и полейте её себе на голову <br>
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openSai()">
+  <ion-card-header>
+    Са‘й
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/safa.jpg">
+    <div>Направьтесь к холму Сафа для совершения семикратного ритуального прохождения между холмами Сафа и Марва (са‘й). После завершения прохождения между Сафой и Марвой паломник окончательно выходит из состояния ихрама. С него снимаются все ограничения для находящегося в ихраме, включая интимные отношения. <br>
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)='openExitMasjid()'>
+     <ion-card-header>
+      Мольба при выходе из мечети
+     </ion-card-header>
+</ion-card>
+
+<ion-card (click)='open11()'>
+     <ion-card-header>
+    11, 12 и 13-е зу-ль-хиджжа — дни ат-ташрик
+     </ion-card-header>
+     <ion-card-content>
+     Программа на 3 дня
+     </ion-card-content>
+  </ion-card>
+
+
+<ion-card >
+  <ion-card-header>
+    Возвращение в долину Мина
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/mina.jpg">
+    <div>Отправляйтесь в долину Мина и в течение трёх дней (йаум ат-ташрик) ночуйте в месте своего проживания в Мине.
+    </div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openJamarat2()">
+  <ion-card-header>
+    Бросание камешков в три столба
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/djamarat.jpg">
+    <div>Каждый тдень собирайте двадцать один камешек величиной чуть больше горошины для бросания в три столба (по семь на каждый столб).<br> 
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+<ion-card  (click)="openTawaf3()">
+  <ion-card-header>
+    Прощальный таваф
+  </ion-card-header>
+  <ion-card-content>
+    <img src="build/img/tawaf.jpg">
+    <div>Перед тем как отправиться домой, следует совершить прощальный обход Каабы<br>
+<b>Показать полностью...</b></div>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card (click)="openVote()">
+     <ion-card-header>
+      Поздарвялем, ваш Хадж завершен!
+     </ion-card-header>
+      <ion-card-content>
+    <div>Да примет ваш хадж Всевышний Аллах!</div>
+  </ion-card-content>
+</ion-card>
+
+
+</ion-list>
 </ion-content>
+

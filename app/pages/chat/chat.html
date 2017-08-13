@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Чат для паломников</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+  <button small class="myBut" (click)='chatsShow=!chatsShow' style="background-color:orange;">Чат для паломников</button>
+<div *ngIf="chatsShow">
+  Попасть в чат для паломников вы можете нажав на ссылку ниже:<br>
+  <a href="https://t.me/joinchat/DDUW2kPRs87zvlDU3xdMLQ">https://t.me/joinchat/DDUW2kPRs87zvlDU3xdMLQ </a>
+
+  </div>
+</ion-list>
+
+</ion-content>

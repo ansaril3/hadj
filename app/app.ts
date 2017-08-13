@@ -1,20 +1,22 @@
 import {Component, ViewChild} from '@angular/core';
 import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar, Splashscreen } from 'ionic-native';
+import {AudioProvider, WebAudioProvider} from 'ionic-audio/dist/ionic-audio';
+import {Type, provide} from '@angular/core';
+import {Website} from './providers/website/website';
 import {InfoPage} from './pages/info/info';
 import {VotePage} from './pages/vote/vote';
 import {UmraPage} from './pages/umra/umra';
 import {HadjPage} from './pages/hadj/hadj';
 import {DaysPage} from './pages/days/days';
 import {DuaListPage} from './pages/dua-list/dua-list';
-import {AudioProvider, WebAudioProvider} from 'ionic-audio/dist/ionic-audio';
-import {Type, provide} from '@angular/core';
-
+import {ChatPage} from './pages/chat/chat';
+import {PrepPage} from './pages/prep/prep';
 
 @Component({
   templateUrl: 'build/app.html',
   // providers: [DbService, AudioProvider]
-  providers: []
+  providers: [Website]
 })
 class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -35,12 +37,12 @@ class MyApp {
     // this.dbService = dbService;
     // set our app's pages
     this.pages = [
-      { title: 'Подготовка', component: InfoPage, logo: 'book' },
+      { title: 'Подготовка', component: PrepPage, logo: 'checkbox' },
       { title: 'Умра', component: UmraPage, logo: 'cloudy-night' },
       { title: 'Хадж', component: HadjPage, logo: 'cube' },
       { title: 'Важные дни', component: DaysPage, logo: 'calendar' }, 
-      { title: 'Список молитв', component: DuaListPage, logo: 'chatboxes' },
-      { title: 'Чат для паломников', component: InfoPage, logo: 'chatboxes' },
+      { title: 'Список молитв', component: DuaListPage, logo: 'book' },
+      { title: 'Чат для паломников', component: ChatPage, logo: 'chatboxes' },
       { title: 'Информация', component: InfoPage, logo: 'information-circle' },
       { title: 'Оценить', component: VotePage, logo: 'thumbs-up' }
     ];
