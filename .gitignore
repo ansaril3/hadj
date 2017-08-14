@@ -10,5 +10,6 @@ plugins/
 *.keystore
 .DS_Store
 Thumbs.db
-resources/
+resources/android
+resources/ios
 

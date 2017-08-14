@@ -1,17 +1,17 @@
-import {Component, ViewChild} from '@angular/core';
-import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
-import {StatusBar, Splashscreen } from 'ionic-native';
-import {AudioProvider, WebAudioProvider} from 'ionic-audio/dist/ionic-audio';
-import {Type, provide} from '@angular/core';
-import {Website} from './providers/website/website';
-import {InfoPage} from './pages/info/info';
-import {VotePage} from './pages/vote/vote';
-import {UmraPage} from './pages/umra/umra';
-import {HadjPage} from './pages/hadj/hadj';
-import {DaysPage} from './pages/days/days';
-import {DuaListPage} from './pages/dua-list/dua-list';
-import {ChatPage} from './pages/chat/chat';
-import {PrepPage} from './pages/prep/prep';
+import { Component, ViewChild } from '@angular/core';
+import { ionicBootstrap, Platform, MenuController, Nav } from 'ionic-angular';
+import { StatusBar, Splashscreen } from 'ionic-native';
+import { AudioProvider, WebAudioProvider } from 'ionic-audio/dist/ionic-audio';
+import { Type, provide } from '@angular/core';
+import { Website } from './providers/website/website';
+import { InfoPage } from './pages/info/info';
+import { VotePage } from './pages/vote/vote';
+import { UmraPage } from './pages/umra/umra';
+import { HadjPage } from './pages/hadj/hadj';
+import { DaysPage } from './pages/days/days';
+import { DuaListPage } from './pages/dua-list/dua-list';
+import { ChatPage } from './pages/chat/chat';
+import { PrepPage } from './pages/prep/prep';
 
 @Component({
   templateUrl: 'build/app.html',
@@ -30,7 +30,7 @@ class MyApp {
   constructor(
     public platform: Platform,
     public menu: MenuController
-  //  dbService: DbService
+    //  dbService: DbService
   ) {
     this.isBusy = true;
     this.initializeApp();
@@ -40,15 +40,15 @@ class MyApp {
       { title: 'Подготовка', component: PrepPage, logo: 'checkbox' },
       { title: 'Умра', component: UmraPage, logo: 'cloudy-night' },
       { title: 'Хадж', component: HadjPage, logo: 'cube' },
-      { title: 'Важные дни', component: DaysPage, logo: 'calendar' }, 
       { title: 'Список молитв', component: DuaListPage, logo: 'book' },
+      { title: 'Важные дни', component: DaysPage, logo: 'calendar' },
       { title: 'Чат для паломников', component: ChatPage, logo: 'chatboxes' },
       { title: 'Информация', component: InfoPage, logo: 'information-circle' },
       { title: 'Оценить', component: VotePage, logo: 'thumbs-up' }
     ];
   }
 
-  
+
   hideSplashScreen() {
     if (Splashscreen) {
       setTimeout(() => {
@@ -75,6 +75,6 @@ class MyApp {
   }
 }
 
-ionicBootstrap(MyApp, [provide(AudioProvider,  { useFactory: AudioProvider.factory })], {
+ionicBootstrap(MyApp, [provide(AudioProvider, { useFactory: AudioProvider.factory })], {
   // tabbarPlacement: 'bottom'
 });

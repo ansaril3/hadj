@@ -22,15 +22,30 @@
       </ion-card-content>
 </ion-card>
 
+<ion-card >
+  <ion-card-header>
+    Путевка
+  </ion-card-header>
+  <ion-card-content>
+    <div>Приобретите путевку у проверенного оператора<br> 
+ <div [innerHTML]="operators"></div>
+ </div>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card >
+  <div [innerHTML]="ads"></div>
+</ion-card>
 
 
 <ion-card  (click)="openDocs()">
   <ion-card-header>
-    Документы
+    Маленькая сумка
   </ion-card-header>
   <ion-card-content>
     <img src="build/img/docs.jpg">
-    <div>Приобретите путевку в через проверенного оператора<br> 
+    <div>Возьмите поясную сумку в которой будете носить ценные вещи<br> 
 <b>Показать полностью...</b></div>
   </ion-card-content>
 </ion-card>

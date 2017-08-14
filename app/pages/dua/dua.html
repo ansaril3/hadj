@@ -28,31 +28,25 @@
  
   
 
-  <div class='arabic'>
-      {{dua.arabic}}
+  <div class='arabic' [innerHTML]="dua.arabic">
+      
   </div>
 
-  <div *ngIf="dua.addition.length" class='adittion'>
-      {{dua.addition}}
-  </div>
-
-
-<div class='label'>
-  <button (click)="rewertTraslate()">Перевод</button>
-  </div>
-  <div *ngIf="traslateShow" class='text'>
-     {{dua.rus}}
+  <div *ngIf="dua.addition.length" [innerHTML]="dua.addition" class='adittion'>
+      
   </div>
 
 
   <div *ngIf="dua.trascription.length" class='label'>
   <button (click)="rewertTrascription()">Транскрипция</button>
   </div>
-  <div *ngIf="trascriptionShow" class='text'>
-       {{dua.trascription}}
- 
+  <div *ngIf="trascriptionShow" class='text' [innerHTML]="dua.trascription">
   </div>
 
+  <div class='label'>
+  <button (click)="rewertTraslate()">Перевод</button>
+  </div>
+  <div *ngIf="traslateShow" class='text'  [innerHTML]="dua.rus"> 
+  </div>
 
- 
 </ion-content>

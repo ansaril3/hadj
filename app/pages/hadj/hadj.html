@@ -29,7 +29,7 @@
 
 
 <ion-card  (click)="openIhram()">
-  <ion-card-header>
+  <ion-card-header class="fard">
     Ихрам
   </ion-card-header>
   <ion-card-content>
@@ -68,8 +68,17 @@
      </ion-card-content>
   </ion-card>
 
+    <ion-card (click)='openTakbir()'>
+     <ion-card-header>
+    Праздничный такбир
+     </ion-card-header>
+     <ion-card-content>
+     Начинайте произносить праздничный такбир до третьего дня ат-Ташрикъа
+     </ion-card-content>
+  </ion-card>
+
 <ion-card  (click)="openArafat()">
-  <ion-card-header>
+  <ion-card-header class="fard">
     Стояние на Арафате
   </ion-card-header>
   <ion-card-content>
@@ -117,7 +126,7 @@
   </ion-card-header>
   <ion-card-content>
     <img src="build/img/baran.jpg">
-    <div>Если вы купили сертификат о принесении в жертву животного, то это дозволено. Если нет, то отправьтесь на скотобойню и совершите жертвоприношение.<br> 
+    <div>Рекомендуем заранее купить сертификат о принесении в жертву животного. Если не успели купить, то отправьтесь на скотобойню и совершите жертвоприношение.<br> 
 </div>
   </ion-card-content>
 </ion-card>
@@ -145,7 +154,7 @@
 </ion-card>
 
 <ion-card  (click)="openTawaf2()">
-  <ion-card-header>
+  <ion-card-header class="fard">
     Таваф Аль-Ифада (основной таваф)
   </ion-card-header>
   <ion-card-content>
@@ -178,7 +187,7 @@
 </ion-card>
 
 <ion-card  (click)="openSai()">
-  <ion-card-header>
+  <ion-card-header class="fard">
     Са‘й
   </ion-card-header>
   <ion-card-content>
