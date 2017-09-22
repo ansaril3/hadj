@@ -19,7 +19,7 @@ export class DuaPage {
   duaName: string;
   constructor(private navCtrl: NavController, navParams: NavParams) {
     this.trascriptionShow = true;
-    this.traslateShow = false;
+    this.traslateShow = true;
     this.dua = navParams.data;
     console.log( this.dua);
     this.isBusy = false;
